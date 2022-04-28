@@ -38,7 +38,10 @@ Mayor complejidad de Integración (3 puntos)
   
   
   #### Integracion con Swapi
-    Se ha creado una lambda para integrarnos con la Api SWAPI, esta lambda consume el api pasandole como parametros el esquema (schema) y el identificador     (id):
+    Se ha creado una lambda para integrarnos con la Api SWAPI, esta lambda consume el api pasandole como parametros el esquema (schema) y el identificador     (id), a conitnuacion, el endpoint y un ejemplo
+    https://al4muw9w98.execute-api.us-east-1.amazonaws.com/v1/api/swapi
+    
+      Ejemplo request: 
             {
               "schema": "people",
               "id": "4"
@@ -47,12 +50,26 @@ Mayor complejidad de Integración (3 puntos)
    Importante:Solo se ha realizado la traduccion para el schema:people
   #### Metodo Post y Get con DynamoDB
     Se ha creado un CRU (Create, reade y updade) para una entidad persona.
-    1. POST Metodo para crear o actualizar una persona
-    2. GET Metodo para obtener una persona
+    1. POST Metodo para crear o actualizar una persona, a conitnuacion, el endpoint y un ejemplo
+      
+      https://al4muw9w98.execute-api.us-east-1.amazonaws.com/v1/api/person
+      
+      Ejemplo request: 
+        {
+          "dni":20202222,
+          "nombre": "Felix",
+          "apellido_paterno": "Perez",
+          "telefono": "987718754",
+          "email": "fperez@gmail.com",
+          "edad": "20"
+        }
+    2. GET Metodo para obtener una persona, a conitnuacion, el endpoint
+      https://al4muw9w98.execute-api.us-east-1.amazonaws.com/v1/api/person/20202222
+      
 
 
 ### Pruebas Unitarias
-Las pruebas unitarias las podemos encontrar en el archivo  RETO INDRA DOC.PDF
+Las pruebas unitarias las podemos encontrar en el archivo  RETO INDRA DOC.PDF. Las pruebas unitarias utilizamos Thunder Cliente de Visual Studio Code. 
 
 ### Documentacion Swagger
 Las documentacion de la api https://app.swaggerhub.com/apis/greipcompany/ag-reto_indra/v2
