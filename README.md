@@ -47,7 +47,7 @@ Mayor complejidad de Integración (3 puntos)
 Importante:Solo se ha realizado la traduccion para el schema:people
 
 ### Pruebas Unitarias
-Las pruebas unitarias las podemos encontrar en el archivoRETO INDRA DOC.PDF
+Las pruebas unitarias las podemos encontrar en el archivo  RETO INDRA DOC.PDF
 
 ### Documentacion Swagger
-Las documentacion de la api
+Las documentacion de la api https://app.swaggerhub.com/apis/greipcompany/ag-reto_indra/v2
