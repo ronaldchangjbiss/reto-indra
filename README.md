@@ -34,17 +34,22 @@ Desplegar sin errores en AWS con el comando deploy del framework serverless (2 p
 Mayor complejidad de Integración (3 puntos)
 
 ### Solucion del Reto
+  La solucion se ha implementado en AWS utilizando los siguientes servicios: Lambdas (Severless), Api Gateway y DynamoDb. Las lambdas fueron implementadas   con NodeJS 14.x.
+  
+  
   #### Integracion con Swapi
     Se ha creado una lambda para integrarnos con la Api SWAPI, esta lambda consume el api pasandole como parametros el esquema (schema) y el identificador     (id):
             {
               "schema": "people",
               "id": "4"
             }
+            
+   Importante:Solo se ha realizado la traduccion para el schema:people
   #### Metodo Post y Get con DynamoDB
     Se ha creado un CRU (Create, reade y updade) para una entidad persona.
     1. POST Metodo para crear o actualizar una persona
     2. GET Metodo para obtener una persona
-Importante:Solo se ha realizado la traduccion para el schema:people
+
 
 ### Pruebas Unitarias
 Las pruebas unitarias las podemos encontrar en el archivo  RETO INDRA DOC.PDF
